@@ -113,7 +113,7 @@ Orderer: &OrdererDefaults
 ################################################################################
 Profiles:
 
-    OneOrgOrdererGenesis:
+    CompanyOrdererGenesis:
         Orderer:
             <<: *OrdererDefaults
             Organizations:
