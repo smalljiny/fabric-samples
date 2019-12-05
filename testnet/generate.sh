@@ -34,7 +34,7 @@ if [ "$?" -ne 0 ]; then
 fi
 
 # generate anchor peer transaction
-configtxgen -profile CompanyChannel -outputAnchorPeersUpdate ./config/CompanyMSPanchors.tx -channelID $CHANNEL_NAME -asOrg Company
+configtxgen -profile   -outputAnchorPeersUpdate ./config/CompanyMSPanchors.tx -channelID $CHANNEL_NAME -asOrg CompanyMSP
 if [ "$?" -ne 0 ]; then
   echo "Failed to generate anchor peer update for Company..."
   exit 1
